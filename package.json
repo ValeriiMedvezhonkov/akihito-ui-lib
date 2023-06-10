@@ -21,7 +21,7 @@
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build -o dist/storybook",
+    "build-storybook": "storybook build -o storybook-static",
     "build-tailwind": "NODE_ENV=production npx tailwindcss -c tailwind.config.js --postcss -o ./dist/styles.css --minify",
     "build:css": "cd src && find . -name \"*.css\" -exec tailwind -c ../tailwind.config.js -i {} -o ../dist/custom.css --minify \\; && cd ..",
     "build:postcss": "postcss ./src/tailwind.css -o ./dist/styles.css --minify"
